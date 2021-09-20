@@ -1,19 +1,20 @@
-/*Estilo do contato.html*/
+
+
+/*Estilo do index.html*/
 .container
 {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
 justify-content: center;
 }
 .center{
-    align-items: justify;
+    align-items: center;
 }
 body {
     background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
 }
 
-/*Estilo do index.html*/
-
+/*Estilo do contato.html*/
 .container
 {
     display: flex;
@@ -23,5 +24,6 @@ justify-content: center;
 .center{
     align-items: center;
 }
-
-    
+body {
+    background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
+}
