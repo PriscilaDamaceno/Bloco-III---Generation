@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ARQUIVO CONFIDENCIAL</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-</head>
+    
+  </head>
 <body>
    <!--menu--->
 <nav class="navbar navbar-expand-lg navbar-warning bg-dark">
@@ -49,7 +50,7 @@
   </nav>
   <!--/menu--->
   <div class="card">
-    <div class="card-header">
+    <div class="card-header d-flex justify-content-center">
      <font color="warning" > ARQUIVO CONFIDENCIAL </font>
     </div>
     <div class="card-body">
@@ -62,17 +63,57 @@
     </div>
     </div>
   </div>
-    
-  <form>
-      Viu algo suspeito e gostaria de denunciar? Nos envie!
-    <div class="form-group">
-      <label for="exampleFormControlFile1">ENVIAR DENUNCIA</label>
-      <input type="file" class="form-control-file" id="exampleFormControlFile1">
+  <hr color="warning"><hr color="warning">
+ <!---form-->
+<div class="row" >
+  <div class="col-md-12">
+    <h3 class="text-center">
+ VIU ALGO SUSPEITO? FAÇA SUA DENUNCIA AQUI!
+</h3>
+ <form>
+  <div class="form-row">
+  
+    <div class="col">Nome:
+      <input type="text" class="form-control" placeholder="Seu Nome aqui" id="nome" onkeyup="validaNome()" >
+      <div id='txtNome'>
+    </div><br>
+    <div class="col">Area do crime: 
+ <input type="text" class="form-control" placeholder="Area de Gotham onde ocorreu o crime" id="area" onkeyup="validaArea()">
+      <div id='txtArea'>
     </div>
-  </form>
-    
+  </div>
+</form>
+    <center><div class="form-group col-md-4">
+      <br>
+     <label for="inputVilao">Vilão</label>
+      <select id="inputVilao" class="form-control" onkeyup="validaVilao()"><div id='txtVilao'>
+        <option selected>Outros</option>
+        <option>Coringa </option>
+        <option>ZAAS </option>
+        <option>Espantalho</option>
+        <option>Duas Caras</option>
+        <option>Pinguim </option>
+        <option>Harley Quinn </option>
+        <option>Hera Venenosa</option>
+        <option>Charada </option>
+        <option>Bane </option>
+        <option>Superman </option>
+        
+      </select>
+    </div>
+   
+  <div class="form-group">
+    <br>
+    <button type="submit" class="btn btn-warning d-flex justify-content-end" onclick="enviar()">DENUNCIAR</button>
+    </div>
+  </div>
+ 
+ 
+</form>
+  <!---/form-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> 
-</body>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
